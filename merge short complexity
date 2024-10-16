@@ -1,0 +1,25 @@
+Time Complexity
+Divide Step:
+
+The array is repeatedly divided into two halves until each sub-array contains a single element.
+This process is logarithmic in nature, specifically O(log n), because each division reduces the problem size by half.
+Conquer Step:
+
+Merging two sorted halves takes linear time, O(n), where n is the total number of elements being merged.
+Each merge operation processes all elements from the two halves once.
+Overall Complexity:
+
+Since the divide step occurs O(log n) times and each divide leads to a merge that takes O(n) time, the overall time complexity of Merge Sort is:
+𝑂(𝑛logn)
+O(nlogn)
+Space Complexity
+Auxiliary Space:
+
+The algorithm uses an additional array (merged) to store the merged elements temporarily.
+This requires O(n) space, where n is the number of elements being sorted.
+Overall Space Complexity:
+
+Thus, the overall space complexity of the Merge Sort algorithm is:
+𝑂(𝑛)O(n)
+Time Complexity: O(n log n)
+Space Complexity: O(n)
