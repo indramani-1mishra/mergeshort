@@ -1,0 +1,20 @@
+Merge Sort Algorithm
+Input:
+An array of integers arr[].
+Output:
+The array sorted in ascending order.
+Steps:
+Divide:
+
+If the starting index (si) is greater than or equal to the ending index (ei), return (this means the array has one or zero elements and is already sorted).
+Calculate the middle index: mid = (si + ei) / 2.
+Recursively call divide on the left half of the array: divide(arr, si, mid).
+Recursively call divide on the right half of the array: divide(arr, mid + 1, ei).
+Conquer:
+
+Merge the two sorted halves back together using the conquer function:
+Create a temporary array merged to hold the sorted elements.
+Use two indices: idx1 for the left half (starting at si) and idx2 for the right half (starting at mid + 1).
+Compare the elements at these indices and add the smaller element to merged, incrementing the respective index.
+If one half is exhausted, copy the remaining elements from the other half into merged.
+Copy the merged elements back into the original array arr[] from index si to ei.
